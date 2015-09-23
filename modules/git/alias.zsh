@@ -66,7 +66,7 @@ alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
 
 # Data (d)
-alias gd='git ls-files'
+alias gd='git diff'
 alias gdc='git ls-files --cached'
 alias gdx='git ls-files --deleted'
 alias gdm='git ls-files --modified'
@@ -90,6 +90,7 @@ alias ggw='git grep --word-regexp'
 
 # Index (i)
 alias gia='git add'
+alias ga='git add'
 alias giA='git add --patch'
 alias giu='git add --update'
 alias gid='git diff --no-ext-diff --cached'
@@ -179,3 +180,4 @@ alias gwc='git clean -n'
 alias gwC='git clean -f'
 alias gwx='git rm -r'
 alias gwX='git rm -rf'
+alias gst='git status'
