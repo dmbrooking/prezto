@@ -58,12 +58,7 @@ function prompt_paradox_build_prompt {
 function prompt_paradox_pwd {
   local pwd="${PWD/#$HOME/~}"
 
-  if [[ "$pwd" == (#m)[/~] ]]; then
-    _prompt_paradox_pwd="$MATCH"
-    unset MATCH
-  else
-    _prompt_paradox_pwd="${${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}//\%/%%}/${${pwd:t}//\%/%%}"
-  fi
+  _promport_paradox_pwd="${pwd}"
 }
 
 function prompt_paradox_print_elapsed_time {
