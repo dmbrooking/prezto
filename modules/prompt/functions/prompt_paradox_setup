@@ -58,7 +58,7 @@ function prompt_paradox_build_prompt {
 function prompt_paradox_pwd {
   local pwd="${PWD/#$HOME/~}"
 
-  _promport_paradox_pwd="${pwd}"
+  _prompt_paradox_pwd="${pwd}"
 }
 
 function prompt_paradox_print_elapsed_time {
